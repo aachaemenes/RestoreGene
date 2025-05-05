@@ -10,3 +10,5 @@ The stored procedure generates the required restore scripts, including the DBCC 
 The companion PowerShell driver script is to automate the database restore process. It calls the stored procedure on the primary, to generate the required script, then it runs the restore commands on a standby server. It will perform the tasks using the existing backup history in the primary msdb.dbo.backupset table to identify the backup files required. The PoSh script can only process one database at a time, database name is a required parameter.
 
 Please click here for a description of all parameters in each script and examples. - http://paulbrewer.wordpress.com/2014/08/15/restore-gene-version-3-free-public-framework-technical-article/
+
+The stored procedure `sp_RestoreGene` now supports up to 64 striped backup files.

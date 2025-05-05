@@ -330,7 +330,61 @@ WITH Stripes
     S7_pdn,
     S8_pdn,
     S9_pdn,
-    S10_pdn
+    S10_pdn,
+    S11_pdn,
+    S12_pdn,
+    S13_pdn,
+    S14_pdn,
+    S15_pdn,
+    S16_pdn,
+    S17_pdn,
+    S18_pdn,
+    S19_pdn,
+    S20_pdn,
+    S21_pdn,
+    S22_pdn,
+    S23_pdn,
+    S24_pdn,
+    S25_pdn,
+    S26_pdn,
+    S27_pdn,
+    S28_pdn,
+    S29_pdn,
+    S30_pdn,
+    S31_pdn,
+    S32_pdn,
+    S33_pdn,
+    S34_pdn,
+    S35_pdn,
+    S36_pdn,
+    S37_pdn,
+    S38_pdn,
+    S39_pdn,
+    S40_pdn,
+    S41_pdn,
+    S42_pdn,
+    S43_pdn,
+    S44_pdn,
+    S45_pdn,
+    S46_pdn,
+    S47_pdn,
+    S48_pdn,
+    S49_pdn,
+    S50_pdn,
+    S51_pdn,
+    S52_pdn,
+    S53_pdn,
+    S54_pdn,
+    S55_pdn,
+    S56_pdn,
+    S57_pdn,
+    S58_pdn,
+    S59_pdn,
+    S60_pdn,
+    S61_pdn,
+    S62_pdn,
+    S63_pdn,
+    S64_pdn
 )
 AS
 (
@@ -347,7 +401,61 @@ SELECT
     Stripe7.physical_device_name AS S7_pdn,
     Stripe8.physical_device_name AS S8_pdn,
     Stripe9.physical_device_name AS S9_pdn,
-    Stripe10.physical_device_name  AS S10_pdn
+    Stripe10.physical_device_name  AS S10_pdn,
+    Stripe11.physical_device_name AS S11_pdn,
+    Stripe12.physical_device_name AS S12_pdn,
+    Stripe13.physical_device_name AS S13_pdn,
+    Stripe14.physical_device_name AS S14_pdn,
+    Stripe15.physical_device_name AS S15_pdn,
+    Stripe16.physical_device_name AS S16_pdn,
+    Stripe17.physical_device_name AS S17_pdn,
+    Stripe18.physical_device_name AS S18_pdn,
+    Stripe19.physical_device_name AS S19_pdn,
+    Stripe20.physical_device_name AS S20_pdn,
+    Stripe21.physical_device_name AS S21_pdn,
+    Stripe22.physical_device_name AS S22_pdn,
+    Stripe23.physical_device_name AS S23_pdn,
+    Stripe24.physical_device_name AS S24_pdn,
+    Stripe25.physical_device_name AS S25_pdn,
+    Stripe26.physical_device_name AS S26_pdn,
+    Stripe27.physical_device_name AS S27_pdn,
+    Stripe28.physical_device_name AS S28_pdn,
+    Stripe29.physical_device_name AS S29_pdn,
+    Stripe30.physical_device_name AS S30_pdn,
+    Stripe31.physical_device_name AS S31_pdn,
+    Stripe32.physical_device_name AS S32_pdn,
+    Stripe33.physical_device_name AS S33_pdn,
+    Stripe34.physical_device_name AS S34_pdn,
+    Stripe35.physical_device_name AS S35_pdn,
+    Stripe36.physical_device_name AS S36_pdn,
+    Stripe37.physical_device_name AS S37_pdn,
+    Stripe38.physical_device_name AS S38_pdn,
+    Stripe39.physical_device_name AS S39_pdn,
+    Stripe40.physical_device_name AS S40_pdn,
+    Stripe41.physical_device_name AS S41_pdn,
+    Stripe42.physical_device_name AS S42_pdn,
+    Stripe43.physical_device_name AS S43_pdn,
+    Stripe44.physical_device_name AS S44_pdn,
+    Stripe45.physical_device_name AS S45_pdn,
+    Stripe46.physical_device_name AS S46_pdn,
+    Stripe47.physical_device_name AS S47_pdn,
+    Stripe48.physical_device_name AS S48_pdn,
+    Stripe49.physical_device_name AS S49_pdn,
+    Stripe50.physical_device_name AS S50_pdn,
+    Stripe51.physical_device_name AS S51_pdn,
+    Stripe52.physical_device_name AS S52_pdn,
+    Stripe53.physical_device_name AS S53_pdn,
+    Stripe54.physical_device_name AS S54_pdn,
+    Stripe55.physical_device_name AS S55_pdn,
+    Stripe56.physical_device_name AS S56_pdn,
+    Stripe57.physical_device_name AS S57_pdn,
+    Stripe58.physical_device_name AS S58_pdn,
+    Stripe59.physical_device_name AS S59_pdn,
+    Stripe60.physical_device_name AS S60_pdn,
+    Stripe61.physical_device_name AS S61_pdn,
+    Stripe62.physical_device_name AS S62_pdn,
+    Stripe63.physical_device_name AS S63_pdn,
+    Stripe64.physical_device_name AS S64_pdn
 FROM #CTE AS Stripe1 
    
 LEFT OUTER JOIN #CTE AS Stripe2
@@ -394,6 +502,276 @@ LEFT OUTER JOIN #CTE AS Stripe10
     ON Stripe10.database_name = Stripe1.Database_name
     AND Stripe10.backupmediasetid = Stripe1.backupmediasetid
     AND Stripe10.family_sequence_number = 10
+
+LEFT OUTER JOIN #CTE AS Stripe11
+    ON Stripe11.database_name = Stripe1.Database_name
+    AND Stripe11.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe11.family_sequence_number = 11
+
+LEFT OUTER JOIN #CTE AS Stripe12
+    ON Stripe12.database_name = Stripe1.Database_name
+    AND Stripe12.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe12.family_sequence_number = 12
+
+LEFT OUTER JOIN #CTE AS Stripe13
+    ON Stripe13.database_name = Stripe1.Database_name
+    AND Stripe13.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe13.family_sequence_number = 13
+
+LEFT OUTER JOIN #CTE AS Stripe14
+    ON Stripe14.database_name = Stripe1.Database_name
+    AND Stripe14.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe14.family_sequence_number = 14
+
+LEFT OUTER JOIN #CTE AS Stripe15
+    ON Stripe15.database_name = Stripe1.Database_name
+    AND Stripe15.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe15.family_sequence_number = 15
+
+LEFT OUTER JOIN #CTE AS Stripe16
+    ON Stripe16.database_name = Stripe1.Database_name
+    AND Stripe16.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe16.family_sequence_number = 16
+
+LEFT OUTER JOIN #CTE AS Stripe17
+    ON Stripe17.database_name = Stripe1.Database_name
+    AND Stripe17.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe17.family_sequence_number = 17
+
+LEFT OUTER JOIN #CTE AS Stripe18
+    ON Stripe18.database_name = Stripe1.Database_name
+    AND Stripe18.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe18.family_sequence_number = 18
+
+LEFT OUTER JOIN #CTE AS Stripe19
+    ON Stripe19.database_name = Stripe1.Database_name
+    AND Stripe19.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe19.family_sequence_number = 19
+
+LEFT OUTER JOIN #CTE AS Stripe20
+    ON Stripe20.database_name = Stripe1.Database_name
+    AND Stripe20.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe20.family_sequence_number = 20
+
+LEFT OUTER JOIN #CTE AS Stripe21
+    ON Stripe21.database_name = Stripe1.Database_name
+    AND Stripe21.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe21.family_sequence_number = 21
+
+LEFT OUTER JOIN #CTE AS Stripe22
+    ON Stripe22.database_name = Stripe1.Database_name
+    AND Stripe22.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe22.family_sequence_number = 22
+
+LEFT OUTER JOIN #CTE AS Stripe23
+    ON Stripe23.database_name = Stripe1.Database_name
+    AND Stripe23.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe23.family_sequence_number = 23
+
+LEFT OUTER JOIN #CTE AS Stripe24
+    ON Stripe24.database_name = Stripe1.Database_name
+    AND Stripe24.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe24.family_sequence_number = 24
+
+LEFT OUTER JOIN #CTE AS Stripe25
+    ON Stripe25.database_name = Stripe1.Database_name
+    AND Stripe25.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe25.family_sequence_number = 25
+
+LEFT OUTER JOIN #CTE AS Stripe26
+    ON Stripe26.database_name = Stripe1.Database_name
+    AND Stripe26.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe26.family_sequence_number = 26
+
+LEFT OUTER JOIN #CTE AS Stripe27
+    ON Stripe27.database_name = Stripe1.Database_name
+    AND Stripe27.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe27.family_sequence_number = 27
+
+LEFT OUTER JOIN #CTE AS Stripe28
+    ON Stripe28.database_name = Stripe1.Database_name
+    AND Stripe28.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe28.family_sequence_number = 28
+
+LEFT OUTER JOIN #CTE AS Stripe29
+    ON Stripe29.database_name = Stripe1.Database_name
+    AND Stripe29.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe29.family_sequence_number = 29
+
+LEFT OUTER JOIN #CTE AS Stripe30
+    ON Stripe30.database_name = Stripe1.Database_name
+    AND Stripe30.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe30.family_sequence_number = 30
+
+LEFT OUTER JOIN #CTE AS Stripe31
+    ON Stripe31.database_name = Stripe1.Database_name
+    AND Stripe31.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe31.family_sequence_number = 31
+
+LEFT OUTER JOIN #CTE AS Stripe32
+    ON Stripe32.database_name = Stripe1.Database_name
+    AND Stripe32.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe32.family_sequence_number = 32
+
+LEFT OUTER JOIN #CTE AS Stripe33
+    ON Stripe33.database_name = Stripe1.Database_name
+    AND Stripe33.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe33.family_sequence_number = 33
+
+LEFT OUTER JOIN #CTE AS Stripe34
+    ON Stripe34.database_name = Stripe1.Database_name
+    AND Stripe34.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe34.family_sequence_number = 34
+
+LEFT OUTER JOIN #CTE AS Stripe35
+    ON Stripe35.database_name = Stripe1.Database_name
+    AND Stripe35.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe35.family_sequence_number = 35
+
+LEFT OUTER JOIN #CTE AS Stripe36
+    ON Stripe36.database_name = Stripe1.Database_name
+    AND Stripe36.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe36.family_sequence_number = 36
+
+LEFT OUTER JOIN #CTE AS Stripe37
+    ON Stripe37.database_name = Stripe1.Database_name
+    AND Stripe37.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe37.family_sequence_number = 37
+
+LEFT OUTER JOIN #CTE AS Stripe38
+    ON Stripe38.database_name = Stripe1.Database_name
+    AND Stripe38.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe38.family_sequence_number = 38
+
+LEFT OUTER JOIN #CTE AS Stripe39
+    ON Stripe39.database_name = Stripe1.Database_name
+    AND Stripe39.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe39.family_sequence_number = 39
+
+LEFT OUTER JOIN #CTE AS Stripe40
+    ON Stripe40.database_name = Stripe1.Database_name
+    AND Stripe40.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe40.family_sequence_number = 40
+
+LEFT OUTER JOIN #CTE AS Stripe41
+    ON Stripe41.database_name = Stripe1.Database_name
+    AND Stripe41.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe41.family_sequence_number = 41
+
+LEFT OUTER JOIN #CTE AS Stripe42
+    ON Stripe42.database_name = Stripe1.Database_name
+    AND Stripe42.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe42.family_sequence_number = 42
+
+LEFT OUTER JOIN #CTE AS Stripe43
+    ON Stripe43.database_name = Stripe1.Database_name
+    AND Stripe43.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe43.family_sequence_number = 43
+
+LEFT OUTER JOIN #CTE AS Stripe44
+    ON Stripe44.database_name = Stripe1.Database_name
+    AND Stripe44.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe44.family_sequence_number = 44
+
+LEFT OUTER JOIN #CTE AS Stripe45
+    ON Stripe45.database_name = Stripe1.Database_name
+    AND Stripe45.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe45.family_sequence_number = 45
+
+LEFT OUTER JOIN #CTE AS Stripe46
+    ON Stripe46.database_name = Stripe1.Database_name
+    AND Stripe46.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe46.family_sequence_number = 46
+
+LEFT OUTER JOIN #CTE AS Stripe47
+    ON Stripe47.database_name = Stripe1.Database_name
+    AND Stripe47.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe47.family_sequence_number = 47
+
+LEFT OUTER JOIN #CTE AS Stripe48
+    ON Stripe48.database_name = Stripe1.Database_name
+    AND Stripe48.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe48.family_sequence_number = 48
+
+LEFT OUTER JOIN #CTE AS Stripe49
+    ON Stripe49.database_name = Stripe1.Database_name
+    AND Stripe49.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe49.family_sequence_number = 49
+
+LEFT OUTER JOIN #CTE AS Stripe50
+    ON Stripe50.database_name = Stripe1.Database_name
+    AND Stripe50.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe50.family_sequence_number = 50
+
+LEFT OUTER JOIN #CTE AS Stripe51
+    ON Stripe51.database_name = Stripe1.Database_name
+    AND Stripe51.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe51.family_sequence_number = 51
+
+LEFT OUTER JOIN #CTE AS Stripe52
+    ON Stripe52.database_name = Stripe1.Database_name
+    AND Stripe52.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe52.family_sequence_number = 52
+
+LEFT OUTER JOIN #CTE AS Stripe53
+    ON Stripe53.database_name = Stripe1.Database_name
+    AND Stripe53.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe53.family_sequence_number = 53
+
+LEFT OUTER JOIN #CTE AS Stripe54
+    ON Stripe54.database_name = Stripe1.Database_name
+    AND Stripe54.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe54.family_sequence_number = 54
+
+LEFT OUTER JOIN #CTE AS Stripe55
+    ON Stripe55.database_name = Stripe1.Database_name
+    AND Stripe55.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe55.family_sequence_number = 55
+
+LEFT OUTER JOIN #CTE AS Stripe56
+    ON Stripe56.database_name = Stripe1.Database_name
+    AND Stripe56.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe56.family_sequence_number = 56
+
+LEFT OUTER JOIN #CTE AS Stripe57
+    ON Stripe57.database_name = Stripe1.Database_name
+    AND Stripe57.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe57.family_sequence_number = 57
+
+LEFT OUTER JOIN #CTE AS Stripe58
+    ON Stripe58.database_name = Stripe1.Database_name
+    AND Stripe58.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe58.family_sequence_number = 58
+
+LEFT OUTER JOIN #CTE AS Stripe59
+    ON Stripe59.database_name = Stripe1.Database_name
+    AND Stripe59.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe59.family_sequence_number = 59
+
+LEFT OUTER JOIN #CTE AS Stripe60
+    ON Stripe60.database_name = Stripe1.Database_name
+    AND Stripe60.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe60.family_sequence_number = 60
+
+LEFT OUTER JOIN #CTE AS Stripe61
+    ON Stripe61.database_name = Stripe1.Database_name
+    AND Stripe61.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe61.family_sequence_number = 61
+
+LEFT OUTER JOIN #CTE AS Stripe62
+    ON Stripe62.database_name = Stripe1.Database_name
+    AND Stripe62.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe62.family_sequence_number = 62
+
+LEFT OUTER JOIN #CTE AS Stripe63
+    ON Stripe63.database_name = Stripe1.Database_name
+    AND Stripe63.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe63.family_sequence_number = 63
+
+LEFT OUTER JOIN #CTE AS Stripe64
+    ON Stripe64.database_name = Stripe1.Database_name
+    AND Stripe64.backupmediasetid = Stripe1.backupmediasetid
+    AND Stripe64.family_sequence_number = 64
 ) 
    
 SELECT * INTO #Stripes FROM Stripes;  
@@ -469,6 +847,276 @@ SELECT
     CASE ISNULL(#Stripes.S10_pdn,'')
     WHEN '' THEN ''
     ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S10_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S10_pdn,LEN(#Stripes.S10_pdn) - CHARINDEX('\',REVERSE(#Stripes.S10_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S10_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S11_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S11_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S11_pdn,LEN(#Stripes.S11_pdn) - CHARINDEX('\',REVERSE(#Stripes.S11_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S11_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S12_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S12_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S12_pdn,LEN(#Stripes.S12_pdn) - CHARINDEX('\',REVERSE(#Stripes.S12_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S12_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S13_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S13_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S13_pdn,LEN(#Stripes.S13_pdn) - CHARINDEX('\',REVERSE(#Stripes.S13_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S13_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S14_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S14_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S14_pdn,LEN(#Stripes.S14_pdn) - CHARINDEX('\',REVERSE(#Stripes.S14_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S14_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S15_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S15_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S15_pdn,LEN(#Stripes.S15_pdn) - CHARINDEX('\',REVERSE(#Stripes.S15_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S15_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S16_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S16_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S16_pdn,LEN(#Stripes.S16_pdn) - CHARINDEX('\',REVERSE(#Stripes.S16_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S16_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S17_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S17_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S17_pdn,LEN(#Stripes.S17_pdn) - CHARINDEX('\',REVERSE(#Stripes.S17_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S17_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S18_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S18_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S18_pdn,LEN(#Stripes.S18_pdn) - CHARINDEX('\',REVERSE(#Stripes.S18_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S18_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S19_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S19_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S19_pdn,LEN(#Stripes.S19_pdn) - CHARINDEX('\',REVERSE(#Stripes.S19_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S19_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S20_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S20_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S20_pdn,LEN(#Stripes.S20_pdn) - CHARINDEX('\',REVERSE(#Stripes.S20_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S20_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S21_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S21_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S21_pdn,LEN(#Stripes.S21_pdn) - CHARINDEX('\',REVERSE(#Stripes.S21_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S21_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S22_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S22_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S22_pdn,LEN(#Stripes.S22_pdn) - CHARINDEX('\',REVERSE(#Stripes.S22_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S22_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S23_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S23_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S23_pdn,LEN(#Stripes.S23_pdn) - CHARINDEX('\',REVERSE(#Stripes.S23_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S23_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S24_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S24_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S24_pdn,LEN(#Stripes.S24_pdn) - CHARINDEX('\',REVERSE(#Stripes.S24_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S24_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S25_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S25_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S25_pdn,LEN(#Stripes.S25_pdn) - CHARINDEX('\',REVERSE(#Stripes.S25_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S25_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S26_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S26_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S26_pdn,LEN(#Stripes.S26_pdn) - CHARINDEX('\',REVERSE(#Stripes.S26_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S26_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S27_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S27_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S27_pdn,LEN(#Stripes.S27_pdn) - CHARINDEX('\',REVERSE(#Stripes.S27_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S27_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S28_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S28_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S28_pdn,LEN(#Stripes.S28_pdn) - CHARINDEX('\',REVERSE(#Stripes.S28_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S28_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S29_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S29_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S29_pdn,LEN(#Stripes.S29_pdn) - CHARINDEX('\',REVERSE(#Stripes.S29_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S29_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S30_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S30_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S30_pdn,LEN(#Stripes.S30_pdn) - CHARINDEX('\',REVERSE(#Stripes.S30_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S30_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S31_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S31_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S31_pdn,LEN(#Stripes.S31_pdn) - CHARINDEX('\',REVERSE(#Stripes.S31_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S31_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S32_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S32_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S32_pdn,LEN(#Stripes.S32_pdn) - CHARINDEX('\',REVERSE(#Stripes.S32_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S32_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S33_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S33_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S33_pdn,LEN(#Stripes.S33_pdn) - CHARINDEX('\',REVERSE(#Stripes.S33_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S33_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S34_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S34_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S34_pdn,LEN(#Stripes.S34_pdn) - CHARINDEX('\',REVERSE(#Stripes.S34_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S34_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S35_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S35_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S35_pdn,LEN(#Stripes.S35_pdn) - CHARINDEX('\',REVERSE(#Stripes.S35_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S35_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S36_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S36_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S36_pdn,LEN(#Stripes.S36_pdn) - CHARINDEX('\',REVERSE(#Stripes.S36_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S36_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S37_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S37_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S37_pdn,LEN(#Stripes.S37_pdn) - CHARINDEX('\',REVERSE(#Stripes.S37_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S37_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S38_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S38_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S38_pdn,LEN(#Stripes.S38_pdn) - CHARINDEX('\',REVERSE(#Stripes.S38_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S38_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S39_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S39_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S39_pdn,LEN(#Stripes.S39_pdn) - CHARINDEX('\',REVERSE(#Stripes.S39_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S39_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S40_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S40_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S40_pdn,LEN(#Stripes.S40_pdn) - CHARINDEX('\',REVERSE(#Stripes.S40_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S40_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S41_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S41_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S41_pdn,LEN(#Stripes.S41_pdn) - CHARINDEX('\',REVERSE(#Stripes.S41_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S41_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S42_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S42_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S42_pdn,LEN(#Stripes.S42_pdn) - CHARINDEX('\',REVERSE(#Stripes.S42_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S42_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S43_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S43_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S43_pdn,LEN(#Stripes.S43_pdn) - CHARINDEX('\',REVERSE(#Stripes.S43_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S43_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S44_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S44_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S44_pdn,LEN(#Stripes.S44_pdn) - CHARINDEX('\',REVERSE(#Stripes.S44_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S44_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S45_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S45_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S45_pdn,LEN(#Stripes.S45_pdn) - CHARINDEX('\',REVERSE(#Stripes.S45_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S45_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S46_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S46_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S46_pdn,LEN(#Stripes.S46_pdn) - CHARINDEX('\',REVERSE(#Stripes.S46_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S46_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S47_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S47_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S47_pdn,LEN(#Stripes.S47_pdn) - CHARINDEX('\',REVERSE(#Stripes.S47_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S47_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S48_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S48_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S48_pdn,LEN(#Stripes.S48_pdn) - CHARINDEX('\',REVERSE(#Stripes.S48_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S48_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S49_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S49_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S49_pdn,LEN(#Stripes.S49_pdn) - CHARINDEX('\',REVERSE(#Stripes.S49_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S49_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S50_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S50_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S50_pdn,LEN(#Stripes.S50_pdn) - CHARINDEX('\',REVERSE(#Stripes.S50_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S50_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S51_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S51_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S51_pdn,LEN(#Stripes.S51_pdn) - CHARINDEX('\',REVERSE(#Stripes.S51_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S51_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S52_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S52_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S52_pdn,LEN(#Stripes.S52_pdn) - CHARINDEX('\',REVERSE(#Stripes.S52_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S52_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S53_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S53_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S53_pdn,LEN(#Stripes.S53_pdn) - CHARINDEX('\',REVERSE(#Stripes.S53_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S53_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S54_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S54_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S54_pdn,LEN(#Stripes.S54_pdn) - CHARINDEX('\',REVERSE(#Stripes.S54_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S54_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S55_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S55_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S55_pdn,LEN(#Stripes.S55_pdn) - CHARINDEX('\',REVERSE(#Stripes.S55_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S55_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S56_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S56_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S56_pdn,LEN(#Stripes.S56_pdn) - CHARINDEX('\',REVERSE(#Stripes.S56_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S56_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S57_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S57_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S57_pdn,LEN(#Stripes.S57_pdn) - CHARINDEX('\',REVERSE(#Stripes.S57_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S57_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S58_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S58_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S58_pdn,LEN(#Stripes.S58_pdn) - CHARINDEX('\',REVERSE(#Stripes.S58_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S58_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S59_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S59_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S59_pdn,LEN(#Stripes.S59_pdn) - CHARINDEX('\',REVERSE(#Stripes.S59_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S59_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S60_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S60_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S60_pdn,LEN(#Stripes.S60_pdn) - CHARINDEX('\',REVERSE(#Stripes.S60_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S60_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S61_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S61_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S61_pdn,LEN(#Stripes.S61_pdn) - CHARINDEX('\',REVERSE(#Stripes.S61_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S61_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S62_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S62_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S62_pdn,LEN(#Stripes.S62_pdn) - CHARINDEX('\',REVERSE(#Stripes.S62_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S62_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S63_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S63_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S63_pdn,LEN(#Stripes.S63_pdn) - CHARINDEX('\',REVERSE(#Stripes.S63_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S63_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S64_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileFullUNC,'Actual') WHEN 'Actual' THEN #Stripes.S64_pdn ELSE @FromFileFullUNC + SUBSTRING(#Stripes.S64_pdn,LEN(#Stripes.S64_pdn) - CHARINDEX('\',REVERSE(#Stripes.S64_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S64_pdn),1) + 1) END + ''''
     END + 
    
     ' WITH ' + CASE ISNULL(@WithReplace,0) WHEN 1 THEN 'REPLACE, ' ELSE '' END   + 'FILE = ' + CAST(#CTE.Position AS VARCHAR(5)) + ',' +
@@ -592,288 +1240,197 @@ SELECT
     WHEN '' THEN ''
     ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S10_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S10_pdn,LEN(#Stripes.S10_pdn) - CHARINDEX('\',REVERSE(#Stripes.S10_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S10_pdn),1) + 1) END + ''''
     END + 
-   
-    ' WITH FILE = ' + CAST(#CTE.Position AS VARCHAR(5)) + ',' +
-    CASE #CTE.has_backup_checksums WHEN 1 THEN 'CHECKSUM, ' ELSE ' ' END + 
-   
-    CASE @StandbyMode WHEN 0 THEN 'NORECOVERY,' ELSE 'STANDBY =N' + '''' + ISNULL(@FromFileFullUNC,SUBSTRING(#CTE.physical_device_name,1,LEN(#CTE.physical_device_name) - CHARINDEX('\',REVERSE(#CTE.physical_device_name)))) + '\' + d.name + '_ROLLBACK_UNDO.bak ' + ''''  + ',' END + SPACE(1) + 
-   
-    'STATS=10,' + SPACE(1) +
-    'MOVE N' + '''' + x.LogicalName + '''' + ' TO ' +
-    '''' +
-    CASE ISNULL(@WithMoveDataFiles,'Actual')
-    WHEN 'Actual' THEN x.PhysicalName
-    ELSE @WithMoveDataFiles + SUBSTRING(x.PhysicalName,LEN(x.PhysicalName) - CHARINDEX('\',REVERSE(x.PhysicalName),1) + 2,CHARINDEX('\',REVERSE(x.PhysicalName),1) + 1)
-    END + '''' + ',' + SPACE(1) + 
-   
-    'MOVE N' + '''' + y.LogicalName + '''' + ' TO ' +
-    '''' +
-    CASE ISNULL(@WithMoveLogFile ,'Actual')
-    WHEN 'Actual' THEN y.PhysicalName
-    ELSE @WithMoveLogFile  + SUBSTRING(y.PhysicalName,LEN(y.PhysicalName) - CHARINDEX('\',REVERSE(y.PhysicalName),1) + 2,CHARINDEX('\',REVERSE(y.PhysicalName),1) + 1)
-    END + '''' AS Command,
-    32769/2 AS Sequence,
-    d.name AS database_name,
-    #CTE.physical_device_name AS BackupDevice,
-    #CTE.backupfinishdate,
-    #CTE.backup_size,
-    #CTE.Last_LSN 
-   
-FROM sys.databases d 
-   
-JOIN #CTE
-ON #CTE.database_name = d.name
-AND #CTE.family_sequence_number = 1 
-   
-LEFT OUTER JOIN #Stripes
-ON #Stripes.database_name = d.name
-AND #Stripes.backupmediasetid = #CTE.backupmediasetid
-AND #Stripes.last_lsn = #CTE.Last_LSN 
-   
-INNER JOIN
-(
-    SELECT
-        DB_NAME(mf.database_id) AS name
-        ,mf.Physical_Name AS PhysicalName
-        ,mf.Name AS LogicalName
-    FROM sys.master_files mf
-    WHERE type_desc = 'ROWS'
-    AND mf.file_id = 1
-) x
-    ON d.name = x.name 
-   
-JOIN
-(
-    SELECT
-        DB_NAME(mf.database_id) AS name, type_desc
-        ,mf.Physical_Name PhysicalName
-        ,mf.Name AS LogicalName
-    FROM sys.master_files mf
-    WHERE type_desc = 'LOG'
-) y
-    ON d.name = y.name 
-   
-WHERE #CTE.[type] = 'I'
-AND #CTE.family_sequence_number = 1 
-   
---------------------------------------------------------------
-UNION -- Log backups taken since most recent full or diff
--------------------------------------------------------------- 
-   
-SELECT
-    '; SET @msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ' = ' + '''' + @Log_Reference + '''' + ';  RAISERROR (@msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ',0,0) WITH LOG'  + ';RESTORE LOG [' + CASE ISNULL(@TargetDatabase,'') WHEN '' THEN d.[name] ELSE @TargetDatabase END + ']' + SPACE(1) +
-    'FROM DISK = N' + '''' + --#CTE.physical_device_name + '''' + SPACE(1) +
-    CASE ISNULL(@FromFileLogUNC,'Actual')
-    WHEN 'Actual' THEN #CTE.physical_device_name
-    ELSE @FromFileLogUNC + SUBSTRING(#CTE.physical_device_name,LEN(#CTE.physical_device_name) - CHARINDEX('\',REVERSE(#CTE.physical_device_name),1) + 2,CHARINDEX('\',REVERSE(#CTE.physical_device_name),1) + 1)
-    END + '''' + 
-   
-    -- Striped backup files
-    CASE ISNULL(#Stripes.S2_pdn,'')
+
+    CASE ISNULL(#Stripes.S11_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S2_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S2_pdn,LEN(#Stripes.S2_pdn) - CHARINDEX('\',REVERSE(#Stripes.S2_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S2_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S11_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S11_pdn,LEN(#Stripes.S11_pdn) - CHARINDEX('\',REVERSE(#Stripes.S11_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S11_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S3_pdn,'')
+
+    CASE ISNULL(#Stripes.S12_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S3_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S3_pdn,LEN(#Stripes.S3_pdn) - CHARINDEX('\',REVERSE(#Stripes.S3_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S3_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S12_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S12_pdn,LEN(#Stripes.S12_pdn) - CHARINDEX('\',REVERSE(#Stripes.S12_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S12_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S4_pdn,'')
+
+    CASE ISNULL(#Stripes.S13_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S4_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S4_pdn,LEN(#Stripes.S4_pdn) - CHARINDEX('\',REVERSE(#Stripes.S4_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S4_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S13_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S13_pdn,LEN(#Stripes.S13_pdn) - CHARINDEX('\',REVERSE(#Stripes.S13_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S13_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S5_pdn,'')
+
+    CASE ISNULL(#Stripes.S14_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S5_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S5_pdn,LEN(#Stripes.S5_pdn) - CHARINDEX('\',REVERSE(#Stripes.S5_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S5_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S14_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S14_pdn,LEN(#Stripes.S14_pdn) - CHARINDEX('\',REVERSE(#Stripes.S14_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S14_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S6_pdn,'')
+
+    CASE ISNULL(#Stripes.S15_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S6_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S6_pdn,LEN(#Stripes.S6_pdn) - CHARINDEX('\',REVERSE(#Stripes.S6_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S6_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S15_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S15_pdn,LEN(#Stripes.S15_pdn) - CHARINDEX('\',REVERSE(#Stripes.S15_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S15_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S7_pdn,'')
+
+    CASE ISNULL(#Stripes.S16_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S7_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S7_pdn,LEN(#Stripes.S7_pdn) - CHARINDEX('\',REVERSE(#Stripes.S7_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S7_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S16_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S16_pdn,LEN(#Stripes.S16_pdn) - CHARINDEX('\',REVERSE(#Stripes.S16_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S16_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S8_pdn,'')
+
+    CASE ISNULL(#Stripes.S17_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S8_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S8_pdn,LEN(#Stripes.S8_pdn) - CHARINDEX('\',REVERSE(#Stripes.S8_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S8_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S17_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S17_pdn,LEN(#Stripes.S17_pdn) - CHARINDEX('\',REVERSE(#Stripes.S17_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S17_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S9_pdn,'')
+
+    CASE ISNULL(#Stripes.S18_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S9_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S9_pdn,LEN(#Stripes.S9_pdn) - CHARINDEX('\',REVERSE(#Stripes.S9_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S9_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S18_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S18_pdn,LEN(#Stripes.S18_pdn) - CHARINDEX('\',REVERSE(#Stripes.S18_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S18_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE ISNULL(#Stripes.S10_pdn,'')
+
+    CASE ISNULL(#Stripes.S19_pdn,'')
     WHEN '' THEN ''
-    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileLogUNC,'Actual') WHEN 'Actual' THEN #Stripes.S10_pdn ELSE @FromFileLogUNC + SUBSTRING(#Stripes.S10_pdn,LEN(#Stripes.S10_pdn) - CHARINDEX('\',REVERSE(#Stripes.S10_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S10_pdn),1) + 1) END + ''''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S19_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S19_pdn,LEN(#Stripes.S19_pdn) - CHARINDEX('\',REVERSE(#Stripes.S19_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S19_pdn),1) + 1) END + ''''
     END + 
-   
-    CASE @StandbyMode WHEN 0 THEN ' WITH NORECOVERY,' ELSE ' WITH STANDBY =N' + '''' + ISNULL(@FromFileFullUNC,SUBSTRING(#CTE.physical_device_name,1,LEN(#CTE.physical_device_name) - CHARINDEX('\',REVERSE(#CTE.physical_device_name)))) + '\' + d.name + '_ROLLBACK_UNDO.bak ' + ''''  + ',' END + SPACE(1) + 
-   
-    CASE #CTE.has_backup_checksums WHEN 1 THEN ' CHECKSUM, ' ELSE ' ' END + 
-   
-    + 'FILE = ' + CAST(#CTE.Position AS VARCHAR(5)) +
-    ' ,STOPAT = ' + '''' + CONVERT(VARCHAR(21),@StopAt,120) + '''' +
-    ' ,MOVE N' + '''' + x2.LogicalName + '''' + ' TO ' +
-    '''' +
-    CASE ISNULL(@WithMoveDataFiles,'Actual')
-    WHEN 'Actual' THEN x2.PhysicalName
-    ELSE @WithMoveDataFiles + SUBSTRING(x2.PhysicalName,LEN(x2.PhysicalName) - CHARINDEX('\',REVERSE(x2.PhysicalName),1) + 2,CHARINDEX('\',REVERSE(x2.PhysicalName),1) + 1)
-    END + '''' + ',' + SPACE(1) + 
-   
-    ' MOVE N' + '''' + y1.LogicalName + '''' + ' TO ' +
-    '''' +
-    CASE ISNULL(@WithMoveLogFile ,'Actual')
-    WHEN 'Actual' THEN y1.PhysicalName
-    ELSE @WithMoveLogFile  + SUBSTRING(y1.PhysicalName,LEN(y1.PhysicalName) - CHARINDEX('\',REVERSE(y1.PhysicalName),1) + 2,CHARINDEX('\',REVERSE(y1.PhysicalName),1) + 1)
-    END + '''' + ';' AS Command,
-    32769 AS Sequence,
-    d.name AS database_name,
-    #CTE.physical_device_name AS BackupDevice,
-    #CTE.backupfinishdate,
-    #CTE.backup_size,
-    #CTE.Last_LSN 
-   
-FROM sys.databases d 
-   
-INNER JOIN
-(
-    SELECT
-        DB_NAME(mf.database_id) AS name
-        ,mf.Physical_Name AS PhysicalName
-        ,mf.Name AS LogicalName
-    FROM sys.master_files mf
-    WHERE type_desc = 'ROWS'
-    AND mf.file_id = 1
-) x2
-ON d.name = x2.name 
-   
-INNER JOIN
-(
-    SELECT
-        DB_NAME(mf.database_id) AS name, type_desc
-        ,mf.Physical_Name PhysicalName
-        ,mf.Name AS LogicalName
-    FROM sys.master_files mf
-    WHERE type_desc = 'LOG'
-) y1
-    ON d.name = y1.name 
-   
-INNER JOIN #CTE
-    ON #CTE.database_name = d.name
-    AND #CTE.family_sequence_number = 1 
-   
-LEFT OUTER JOIN #Stripes
-    ON #Stripes.database_name = d.name
-    AND #Stripes.backupmediasetid = #CTE.backupmediasetid
-    AND #Stripes.last_lsn = #CTE.Last_LSN 
-   
-WHERE #CTE.[type] = 'L'
-AND #CTE.family_sequence_number = 1 
-   
---------------------------------------------------------------
-UNION -- Declare @msg_ variable
---------------------------------------------------------------
-SELECT
---   '; DECLARE @msg_' + d.name + ' VARCHAR(1000)' AS Command,
-   '; DECLARE @msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ' VARCHAR(1000)' AS Command,
-    0 AS Sequence,
-    d.name AS database_name,
-    '' AS BackupDevice,
-    GETDATE() AS backupfinishdate,
-    #CTE.backup_size,
-    '0' AS Last_LSN 
-   
-FROM sys.databases d 
-   
-JOIN #CTE
-ON #CTE.database_name = d.name 
-   
-WHERE #CTE.[type] = 'D'
-AND @LogShippingVariableDeclare = 1 
-   
---------------------------------------------------------------
-UNION -- Restore WITH RECOVERY
---------------------------------------------------------------
-SELECT
-   '; SET @msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ' = ' + '''' + @Log_Reference  + '''' + ';  RAISERROR (@msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ',0,0) WITH LOG' + ';RESTORE DATABASE [' + CASE ISNULL(@TargetDatabase,'') WHEN '' THEN d.[name] ELSE @TargetDatabase END + ']' + SPACE(1) + 'WITH RECOVERY' AS Command,
-    32771 AS Sequence,
-    d.name AS database_name,
-    '' AS BackupDevice,
-    GETDATE() AS backupfinishdate,
-    #CTE.backup_size,
-    '999999999999999999998' AS Last_LSN 
-   
-FROM sys.databases d 
-   
-JOIN #CTE
-ON #CTE.database_name = d.name 
-   
-WHERE #CTE.[type] = 'D'
-AND @WithRecovery = 1 
-   
---------------------------------------------------------------
-UNION -- CHECKDB
---------------------------------------------------------------
-SELECT
-    '; SET @msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ' = ' + '''' + @Log_Reference  + '''' + ';  RAISERROR (@msg_' + REPLACE(REPLACE(d.name,' ','_'),'.','_') + ',0,0) WITH LOG' + ';DBCC CHECKDB(' + '''' + CASE ISNULL(@TargetDatabase,'') WHEN '' THEN d.[name] ELSE @TargetDatabase END + '''' + ') WITH NO_INFOMSGS, ALL_ERRORMSGS' AS Command,
-    32772 AS Sequence,
-    d.name AS database_name,
-    '' AS BackupDevice,
-    DATEADD(minute,1,GETDATE()) AS backupfinishdate,
-    #CTE.backup_size,
-    '999999999999999999999' AS Last_LSN 
-   
-FROM sys.databases d 
-   
-JOIN #CTE
-ON #CTE.database_name = d.name 
-   
-WHERE #CTE.[type] = 'D'
-AND @WithCHECKDB = 1
-AND @WithRecovery = 1 
-   
---------------------------------------------------------------
-UNION -- WITH MOVE secondary data files, allows for up to 32769/2 file groups
---------------------------------------------------------------
-SELECT
-    ', MOVE N' + '''' + b.name + '''' + ' TO N' + '''' +
-    CASE ISNULL(@WithMoveDataFiles,'Actual')
-    WHEN 'Actual' THEN b.physical_name
-    ELSE @WithMoveDataFiles + SUBSTRING(b.Physical_Name,LEN(b.Physical_Name) - CHARINDEX('\',REVERSE(b.Physical_Name),1) + 2,CHARINDEX('\',REVERSE(b.Physical_Name),1) + 1)
-    END + '''',
-    b.file_id AS Sequence,
-    DB_NAME(b.database_id) AS database_name,
-    'SECONDARY FULL' AS BackupDevice,
-    #CTE.backupfinishdate,
-    #CTE.backup_size,
-    #CTE.Last_LSN 
-   
-FROM sys.master_files b
-INNER JOIN #CTE
-ON #CTE.database_name = DB_NAME(b.database_id) 
-   
-WHERE #CTE.[type] = 'D'
-AND b.type_desc = 'ROWS'
-AND b.file_id > 2
-AND @WithMoveDataFiles IS NOT NULL
---------------------------------------------------------------
-) a
--------------------------------------------------------------- 
-   
-WHERE a.database_name = ISNULL(@database,a.database_name)
-AND (@IncludeSystemDBs = 1 OR a.database_name NOT IN('master','model','msdb'))
-AND a.Last_LSN > @LogShippingLastLSN
-   
-ORDER BY
-    database_name,
-    sequence,
-    Last_LSN  
-   
-END
+
+    CASE ISNULL(#Stripes.S20_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S20_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S20_pdn,LEN(#Stripes.S20_pdn) - CHARINDEX('\',REVERSE(#Stripes.S20_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S20_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S21_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S21_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S21_pdn,LEN(#Stripes.S21_pdn) - CHARINDEX('\',REVERSE(#Stripes.S21_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S21_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S22_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S22_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S22_pdn,LEN(#Stripes.S22_pdn) - CHARINDEX('\',REVERSE(#Stripes.S22_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S22_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S23_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S23_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S23_pdn,LEN(#Stripes.S23_pdn) - CHARINDEX('\',REVERSE(#Stripes.S23_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S23_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S24_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S24_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S24_pdn,LEN(#Stripes.S24_pdn) - CHARINDEX('\',REVERSE(#Stripes.S24_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S24_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S25_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S25_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S25_pdn,LEN(#Stripes.S25_pdn) - CHARINDEX('\',REVERSE(#Stripes.S25_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S25_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S26_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S26_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S26_pdn,LEN(#Stripes.S26_pdn) - CHARINDEX('\',REVERSE(#Stripes.S26_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S26_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S27_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S27_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S27_pdn,LEN(#Stripes.S27_pdn) - CHARINDEX('\',REVERSE(#Stripes.S27_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S27_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S28_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S28_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S28_pdn,LEN(#Stripes.S28_pdn) - CHARINDEX('\',REVERSE(#Stripes.S28_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S28_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S29_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S29_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S29_pdn,LEN(#Stripes.S29_pdn) - CHARINDEX('\',REVERSE(#Stripes.S29_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S29_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S30_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S30_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S30_pdn,LEN(#Stripes.S30_pdn) - CHARINDEX('\',REVERSE(#Stripes.S30_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S30_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S31_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S31_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S31_pdn,LEN(#Stripes.S31_pdn) - CHARINDEX('\',REVERSE(#Stripes.S31_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S31_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S32_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S32_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S32_pdn,LEN(#Stripes.S32_pdn) - CHARINDEX('\',REVERSE(#Stripes.S32_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S32_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S33_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S33_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S33_pdn,LEN(#Stripes.S33_pdn) - CHARINDEX('\',REVERSE(#Stripes.S33_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S33_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S34_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S34_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S34_pdn,LEN(#Stripes.S34_pdn) - CHARINDEX('\',REVERSE(#Stripes.S34_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S34_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S35_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S35_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S35_pdn,LEN(#Stripes.S35_pdn) - CHARINDEX('\',REVERSE(#Stripes.S35_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S35_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S36_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S36_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S36_pdn,LEN(#Stripes.S36_pdn) - CHARINDEX('\',REVERSE(#Stripes.S36_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S36_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S37_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S37_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S37_pdn,LEN(#Stripes.S37_pdn) - CHARINDEX('\',REVERSE(#Stripes.S37_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S37_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S38_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S38_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S38_pdn,LEN(#Stripes.S38_pdn) - CHARINDEX('\',REVERSE(#Stripes.S38_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S38_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S39_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S39_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S39_pdn,LEN(#Stripes.S39_pdn) - CHARINDEX('\',REVERSE(#Stripes.S39_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S39_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S40_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S40_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S40_pdn,LEN(#Stripes.S40_pdn) - CHARINDEX('\',REVERSE(#Stripes.S40_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S40_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S41_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S41_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S41_pdn,LEN(#Stripes.S41_pdn) - CHARINDEX('\',REVERSE(#Stripes.S41_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S41_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S42_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S42_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S42_pdn,LEN(#Stripes.S42_pdn) - CHARINDEX('\',REVERSE(#Stripes.S42_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S42_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S43_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S43_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S43_pdn,LEN(#Stripes.S43_pdn) - CHARINDEX('\',REVERSE(#Stripes.S43_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S43_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S44_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S44_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S44_pdn,LEN(#Stripes.S44_pdn) - CHARINDEX('\',REVERSE(#Stripes.S44_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S44_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S45_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S45_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S45_pdn,LEN(#Stripes.S45_pdn) - CHARINDEX('\',REVERSE(#Stripes.S45_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S45_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S46_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S46_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S46_pdn,LEN(#Stripes.S46_pdn) - CHARINDEX('\',REVERSE(#Stripes.S46_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S46_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S47_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S47_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S47_pdn,LEN(#Stripes.S47_pdn) - CHARINDEX('\',REVERSE(#Stripes.S47_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S47_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S48_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S48_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S48_pdn,LEN(#Stripes.S48_pdn) - CHARINDEX('\',REVERSE(#Stripes.S48_pdn),1) + 2,CHARINDEX('\',REVERSE(#Stripes.S48_pdn),1) + 1) END + ''''
+    END + 
+
+    CASE ISNULL(#Stripes.S49_pdn,'')
+    WHEN '' THEN ''
+    ELSE  ', DISK = N' + '''' + CASE ISNULL(@FromFileDiffUNC,'Actual') WHEN 'Actual' THEN #Stripes.S49_pdn ELSE @FromFileDiffUNC + SUBSTRING(#Stripes.S49_pdn,LEN(#Stripes.S49_pdn) - CHARINDEX('\',REVERSE(#Stripes.S49_pdn),1) + 2,CHARINDEX('\
